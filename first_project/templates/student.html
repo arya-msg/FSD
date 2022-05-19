@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Student</title>
+  </head>
+  <body>
+    <h3>Add Student </h3>
+<form action="/student/" method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+    {{ form }}
+  <input type="submit" value="Submit">
+  <h3>Students Joined</h3>
+
+  <table border="1">
+    {% for r in student_rows %}
+      <tr>
+        <td>{{ r.roll_number }}</td>
+        <td>{{ r.name }}</td>
+        <td>{{ r.year }}</td>
+        <td>{{ r.dob }}</td>
+        <td>{{ r.degree }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+</form>
+</body>
+</html>
