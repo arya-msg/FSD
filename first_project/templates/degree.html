@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Degree</title>
+  </head>
+  <body>
+    <h2>Add Degrees </h2>
+
+<form action="/project7_8/degree/" method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+
+    {{ form.as_p }}
+
+ <br></br>
+  <div class="submit">
+  <input type="submit" value="Submit">
+  </div>
+
+  {% for message in messages %}
+
+  <script>
+  alert('{{ message }}');
+</script>
+
+{% endfor %}
+
+<div>
+  <h2>Degrees Offered</h2>
+
+
+  <table border="1">
+    {% for r in degree_rows %}
+      <tr>
+        <td>{{ r.title }}</td>
+        <td>{{ r.branch }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+
+  </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Search Student</title>
+  </head>
+  <body>
+    <h3>Search Student </h3>
+<form action="/project7_8/student/search/" method="get" >
+  {% csrf_token %}
+    {{ form.as_p }}
+  <input type="submit" value="Search">
+
+  <h3>Students Joined</h3>
+  <table border="1">
+
+    {% for r in student_rows %}
+      <tr>
+        <td>{{ r.roll_number }}</td>
+        <td>{{ r.name }}</td>
+        <td>{{ r.year }}</td>
+        <td>{{ r.dob }}</td>
+        <td>{{ r.degree }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+</form>
+</body>
+</html>
