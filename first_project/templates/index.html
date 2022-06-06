@@ -1,0 +1,140 @@
+<!doctype html>
+{% load static %}
+<html>
+   <head>
+      <meta charset="utf-8">
+
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <!-- font awesome cdn link  -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+	  <!-- Load external CSS styles -->
+
+      <link href="{% static 'styles.css' %}" rel="stylesheet" type="text/css">
+   </head>
+   <body>
+   <header>
+      <nav class="navbar navbar-expand-sm bg-light">
+         <ul class="navbar-nav">
+            <li class="nav-item">
+               <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#contact">Contact</a>
+            </li>
+         </ul>
+      </nav>
+
+         <div class="user">
+             <img src="{% static 'img.JPG' %}" alt="">
+            <h3 class="name">ARYA M</h3>
+            <p class="post">Software Engineer</p>
+         </div>
+      </header>
+      <section class="about" id="about">
+		 <h1 class="heading"> About Me </h1>
+         <h3>Hi There !</h3>
+         <h1>I'm Arya M</h1>
+         <p>I'm a software engineer with 10 years of experience in the IT field as a manual tester. I'm really passionate about coding and learning new technologies.</p>
+         <div class="info">
+            <h4> Name : Arya M </h4>
+            <h4>  Age :  33</h4>
+            <h4>  Qualification :  B-tech in Instrumentation and Control Engineering </h4>
+            <h4>  Post :  Manual Tester </h4>
+            <h4>  Language : English, Malayalam </h4>
+         </div>
+      </section>
+      <section class="education" id="education">
+         <h1 class="heading"> My Education </h1>
+         <div class="box-container">
+            <div class="box">
+               <i class="fas fa-graduation-cap"></i>
+               2006-10
+               <h3>Bachelor of Technology (Instrumentation and Control Engineering)</h3>
+               <p>NSS College of Engineering</p>
+            </div>
+            <div class="box">
+               <i class="fas fa-graduation-cap"></i>
+               2004-06
+               <h3>Higher Secondary (Bio Maths)</h3>
+               <p>SMHSS Patharam, Kollam</p>
+            </div>
+            <div class="box">
+               <i class="fas fa-graduation-cap"></i>
+               2004
+               <h3>High School</h3>
+               <p>Bishop MMCSPMHS, Punnammood, Kollam</p>
+            </div>
+         </div>
+      </section>
+      <section class="projects" id="projects">
+	      <h1 class="heading"> My Projects </h1>
+	      <div class="project">
+		  <ul>
+		    <li>
+           <a href="{% url 'tictactoe' %}">Tic-Tac-Toe</a>
+		    </li>
+		    <li>
+		      <a href="{% url 'wordle' %}">Wordle</a>
+		    </li>
+        <li>
+		      <a href="{% url 'project56' %}">Project5-6</a>
+		    </li>
+        <li>
+          <a href="{% url 'project78' %}">Project7-8</a>
+        </li>
+        <li>
+          <a href="{% url 'login' %}">Project9- Employee Management</a>
+        </li>
+        <li>
+          <a href="{% url 'todo' %}">Project9- To DO</a>
+        </li>
+        <li>
+          <a href="{% url 'home' %}">Project10- Blog</a>
+        </li>
+
+
+		  </ul>
+		</div>
+        </section>
+      <section class="skills" id="skills">
+	  <h1 class="heading">My Skills </h1>
+         <div class="skills-area">
+            <div class="skill">
+               <div class="skill-title">Webservice Testing</div>
+               <div class="skill-bar"></div>
+               <div class="webservice skill-fill">
+                  <span class="skill-percent">70%
+               </div>
+            </div>
+            <div class="skill">
+               <div class="skill-title">SQL</div>
+               <div class="skill-bar"></div>
+               <div class="sql skill-fill">
+                  <span class="skill-percent">20%
+               </div>
+            </div>
+            <div class="skill">
+               <div class="skill-title">Python</div>
+               <div class="skill-bar"></div>
+               <div class="Python skill-fill">
+                  <span class="skill-percent">40%
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="contact" id="contact">
+      <h1 class="heading"> Contact Me </h1>
+      <h3>Email: arya@gmail.com</h3>
+      <h3>Phone: 9876543210</h3>
+   </body>
+</html>

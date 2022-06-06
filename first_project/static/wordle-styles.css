@@ -1,0 +1,35 @@
+html, body {
+  align-items: center;
+  justify-content: center;
+  height: 100%
+  font-family: 'Open Sans', arial, sans-serif;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #FFE333;
+}
+h1, h2 {
+  color: Black;
+  text-align: center;
+}
+
+.g {
+  color: Green;
+}
+.r {
+  color: Red;
+}
+.b {
+  color: Blue;
+}
+
+.button {
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.row1,.row2,.row3,.row4,.row5,.row6 {
+  border-radius: 10%;
+  text-align: center;
+
+}

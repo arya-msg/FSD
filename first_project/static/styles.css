@@ -1,0 +1,80 @@
+/* move special fonts to HTML head for better performance */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,700');
+
+/* custom template */
+html,
+body {
+    height: 100%
+    font-family: 'Open Sans', arial, sans-serif;
+    padding-left: 1rem;
+    background-color: #737373 
+}
+header .navbar ul li a{
+    display: block;
+    padding:1rem;
+    margin:1.5rem 0;
+    color:#737373;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+ul {
+	text-align: center;
+	font-size: 3rem;
+}
+.project {
+	text-align: center;
+	font-size: 3rem;
+}
+header .user img{
+    height:17rem;
+    width:17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border:.7rem solid var(--yellow);
+}
+.heading{
+    text-align: center;
+    margin:0 6rem;
+    font-size: 4rem;
+    padding:1rem;
+    border-bottom: .1rem solid #fff4;
+    color:#fff;
+}
+p,h1,h2,h3,h4,td,tr {
+  color: white;
+  text-align: Left;
+}
+
+  .skills-area {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20%;
+  }
+  
+  .skill {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  .skill-title {
+	 color: white;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .skill-fill {
+    background: rgb(255, 94, 0);
+    height: 60px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+    overflow: hidden;
+  }
+  
+  .skill-percent {
+    font-size: 30px;
+  }
+

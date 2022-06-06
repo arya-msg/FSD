@@ -1,0 +1,15 @@
+{
+  "student" :  [
+    { "roll_number" : "BL.EN.P2.BLL001", "name" : "Arun", "year" : "2021", "dob" : "1998-08-01", "degree" : "CS AI & ML" },
+    { "roll_number" : "BL.EN.P2.BLL002", "name" : "Arya", "year" : "2021", "dob" : "1988-08-01", "degree" : "AI" },
+	{ "roll_number" : "BL.EN.P2.BLL003", "name" : "Paru", "year" : "2021", "dob" : "2000-02-02", "degree" : "ECE" },
+	{ "roll_number" : "BL.EN.P2.BLL004", "name" : "Minnu", "year" : "2021", "dob" : "2000-02-02", "degree" : "EEE" },
+	{ "roll_number" : "BL.EN.P2.BLL005", "name" : "Kathu", "year" : "2021", "dob" : "2000-02-02", "degree" : "IC" },
+	{ "roll_number" : "BL.EN.P2.BLL006", "name" : "BLi", "year" : "2021", "dob" : "2000-02-02", "degree" : "CS AI & ML" },
+	{ "roll_number" : "BL.EN.P2.BLL007", "name" : "Emi", "year" : "2021", "dob" : "2000-02-02", "degree" : "WNA" },
+	{ "roll_number" : "BL.EN.P2.BLL008", "name" : "Appu", "year" : "2021", "dob" : "2000-02-02", "degree" : "ECE" },
+	{ "roll_number" : "BL.EN.P2.BLL009", "name" : "Kannan", "year" : "2021", "dob" : "2000-02-02", "degree" : "VLSI" },
+	{ "roll_number" : "BL.EN.P2.BLL010", "name" : "Shanku", "year" : "2021", "dob" : "2000-02-02", "degree" : "CSN" }
+    
+  ]
+}
