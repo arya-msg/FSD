@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>First App</title>
+    <link rel="stylesheet" href=project5_6.css">
+  </head>
+  <body>
+    <h1>This is index.html</h1>
+
+    <h2>This page is viewed {{ inject_var }} times.</h2>
+    <h3>Click <a  href="{% url 'project56_help' %}">here</a> for help.<h3>
+    <img src="{% static 'logo.jpg' %}" alt="Amrita Logo">
+
+    {% if  evenOrOdd == 0 %}
+      <h2>Hello Amrita.</h2>
+    {% else %}
+      <h2>Hello World.</h2>
+    {% endif %}
+
+    {% for x in fruits %}
+    <h1>{{ x }}</h1>
+    {% endfor %}
+
+<link rel="stylesheet" type='text/css' href="{% static 'style.css' %}">
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% load static %}
+  <head>
+    <meta charset="utf-8">
+    <title>Wordle By Arya M</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+<!-- import bootstap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Load external CSS styles  and js-->
+  <link href="{% static 'wordle-styles.css' %}" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="{% static 'wordle-scripts.js' %}"></script>
+  <body>
+    <div class="heading" id="wordle">
+      <h1><span class="r">WORDLE</span></h1>
+      <br>
+      <h2>Let's check your <span  class="b">Vocabulary</span> Skills</h2>
+      <h2>Guess the <span class="g">WORDLE</span> in six tries</h2>
+      <br>
+      <h3 id="trials">Attempts Remaining: 6/6</h3>
+      <br>
+    </div>
+    <div class="input" id = "table">
+
+      <input type="text" class="row1" id="cell_11" maxlength="1" >
+      <input type="text" class="row1" id="cell_12" maxlength="1" >
+      <input type="text" class="row1" id="cell_13" maxlength="1" >
+      <input type="text" class="row1" id="cell_14" maxlength="1" >
+      <input type="text" class="row1" id="cell_15" maxlength="1" >
+      <br></br>
+
+      <input type="text" class="row2" id="cell_21" maxlength="1" >
+      <input type="text" class="row2" id="cell_22" maxlength="1" >
+      <input type="text" class="row2" id="cell_23" maxlength="1" >
+      <input type="text" class="row2" id="cell_24" maxlength="1" >
+      <input type="text" class="row2" id="cell_25" maxlength="1" >
+      <br></br>
+
+      <input type="text" class="row3" id="cell_31" maxlength="1" >
+      <input type="text" class="row3" id="cell_32" maxlength="1" >
+      <input type="text" class="row3" id="cell_33" maxlength="1" >
+      <input type="text" class="row3" id="cell_34" maxlength="1" >
+      <input type="text" class="row3" id="cell_35" maxlength="1" >
+      <br></br>
+
+      <input type="text" class="row4" id="cell_41" maxlength="1" >
+      <input type="text" class="row4" id="cell_42" maxlength="1" >
+      <input type="text" class="row4" id="cell_43" maxlength="1" >
+      <input type="text" class="row4" id="cell_44" maxlength="1" >
+      <input type="text" class="row4" id="cell_45" maxlength="1" >
+      <br></br>
+
+      <input type="text" class="row5" id="cell_51" maxlength="1" >
+      <input type="text" class="row5" id="cell_52" maxlength="1" >
+      <input type="text" class="row5" id="cell_53" maxlength="1" >
+      <input type="text" class="row5" id="cell_54" maxlength="1" >
+      <input type="text" class="row5" id="cell_55" maxlength="1" >
+      <br></br>
+
+      <input type="text" class="row6" id="cell_61" maxlength="1" >
+      <input type="text" class="row6" id="cell_62" maxlength="1" >
+      <input type="text" class="row6" id="cell_63" maxlength="1" >
+      <input type="text" class="row6" id="cell_64" maxlength="1" >
+      <input type="text" class="row6" id="cell_65" maxlength="1" >
+      <br></br>
+      <br></br>
+
+      <h2 id="alerts"></h2>
+    </div>
+    <div id=btn class="text-center">
+      <input type="submit" class="button" value="Submit">
+    </div>
+
+
+
+  </body>
+</html>
